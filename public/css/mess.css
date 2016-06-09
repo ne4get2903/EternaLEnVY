@@ -1,0 +1,276 @@
+
+
+ul.msg_list li {
+  background: #f7f7f7;
+  padding: 5px;
+  display: flex;
+  margin: 6px 6px 0;
+  width: 96% !important;
+}
+ul.msg_list li:last-child {
+  margin-bottom: 6px;
+  padding: 10px;
+}
+ul.msg_list li a {
+  padding: 3px 5px !important;
+}
+ul.msg_list li a .image img {
+  border-radius: 2px 2px 2px 2px;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  float: left;
+  margin-right: 10px;
+  width: 20%;
+}
+ul.msg_list li a .time {
+  font-size: 11px;
+  font-style: italic;
+  font-weight: bold;
+  position: absolute;
+  right: 35px;
+}
+ul.msg_list li a .name {
+  font-size: 14px;
+  font-weight: bold;
+  right: 35px;
+}
+
+ul.msg_list li a .message {
+  display: block !important;
+  font-size: 11px;
+  text-transform: none;
+}
+.dropdown-menu.msg_list span {
+  white-space: normal;
+}
+.dropdown-menu {
+  border: medium none;
+  box-shadow: none;
+  display: none;
+  float: left;
+  font-size: 12px;
+  left: 0;
+  list-style: none outside none;
+  padding: 0;
+  position: absolute;
+  text-shadow: none;
+  top: 100%;
+  z-index: 1000;
+  border: 1px solid #D9DEE4;
+  border-top-left-radius: 10;
+  border-top-right-radius: 10;
+  
+}
+.dropdown-menu>li>a {
+  color: #5A738E;
+}
+.nav-holder .open .dropdown-menu {
+  position: absolute;
+  background: #fff;
+  margin-top: 0;
+  border: 1px solid #D9DEE4;
+  -webkit-box-shadow: none;
+  right: 0;
+  left: auto;
+  width: 220px;
+}
+.nav-holder .open .dropdown-menu.msg_list {
+  width: 300px;
+}
+.info-number .badge {
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 13px;
+  padding: 2px 6px;
+  position: absolute;
+  right: 2px;
+  top: 8px;
+}
+ul.to_do {
+  padding: 0;
+}
+ul.to_do li {
+  background: #f3f3f3;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  position: relative;
+  padding: 7px;
+  margin-bottom: 5px;
+  list-style: none;
+}
+ul.to_do p {
+  margin: 0;
+}
+
+.dropdown-menu a {
+    cursor: pointer;
+}
+
+
+ul.msg_list li:last-child {
+    margin-bottom: 6px;
+    padding: 5px;
+}
+
+
+
+/* mail */
+
+.x_content {
+  padding: 35px 5px 6px;
+  position: relative;
+  width: 100%;
+  float: left;
+  clear: both;
+  margin-top: 5px;
+  margin-left: 20px;
+  color: #73879c;
+}
+.x_content h4 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.row {
+  margin-right: -10px;
+  margin-left: -10px;
+
+}
+
+.mail_list_column {
+  border-left: 1px solid #DBDBDB;
+  height: 500px;
+  overflow: auto;
+  position: fixed;
+}
+
+.mail_view {
+  border-left: 1px solid #DBDBDB
+  margin-bottom:200px;
+  padding-bottom: 30px;
+  padding-right: 50px;
+    left: 343px;
+    margin-left: 0px;
+    padding-left: 10px;
+
+
+}
+
+.mail_list {
+  width: 100%;
+  border-bottom: 1px solid #DBDBDB;
+  margin-bottom: 2px;
+  display: inline-block;
+  border-top: 1px solid #DBDBDB;
+}
+
+.mail_list:hover, .mail_list:focus{
+
+  color: rgba(208, 237, 245, 1);
+} 
+
+
+.mail_list .left {
+  width: 5%;
+  float: left;
+  margin-right: 3%
+}
+
+.mail_list .right {
+  width: 90%;
+  float: left
+}
+
+.mail_list h3 {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0px 0 6px;
+}
+
+.mail_list h3 small {
+  float: right;
+  color: #ADABAB;
+  font-size: 11px;
+  line-height: 20px;
+}
+
+.mail_list .badge {
+  padding: 3px 6px;
+  font-size: 8px;
+  background: #BAB7B7
+}
+
+@media (max-width: 767px) {
+  .mail_list {
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+}
+
+.profile_details .profile_view .left {
+  margin-top: 20px;
+}
+
+.profile_details .profile_view .left p {
+  margin-bottom: 3px;
+}
+
+.mail_list .left {
+  width: 5%;
+  float: left;
+  margin-right: 3%
+}
+
+.left {
+  float: left;
+}
+
+.mail_list .right {
+  width: 90%;
+  float: left
+}
+
+.mail_view {
+  border-left: 1px solid #DBDBDB
+  border-top: 1px solid #DBDBDB
+}
+
+.mail_heading h4 {
+  font-size: 18px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+
+.btn{
+  margin: 0 20 0 0;
+}
+
+.form-groupx{
+    border-top: 1px solid #DBDBDB;
+    padding-top: 10px
+}
+
+.view-mail{
+height: 250px;
+overflow: auto;
+}
+
+
+.mail_heading .btn-group .btn{
+  margin: 0px 0px 0px 0px;
+  padding:0px 0px 0px 0px;
+}
+
+.form-groupx{
+  margin-bottom: 100px;
+
+}
+
+
+.sender-info{
+  border-bottom: 1px solid #DBDBDB;
+
+  padding-bottom: 10px;
+}
+
