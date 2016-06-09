@@ -1,6 +1,7 @@
 ﻿<?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 //somthing shit in here
+//WTF this shit
 class Album extends MY_Controller {
 
 	public function index()
