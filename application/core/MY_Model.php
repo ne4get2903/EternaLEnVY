@@ -170,6 +170,22 @@ class MY_Model extends CI_Model {
 		return $query->num_rows();
 	}
 
+	function get_total_datetime($datetime)
+	{
+		$query = $this->db->query("select * from ".$this->table." where datetime < '".$datetime."'");
+		return $query->num_rows();
+	}
+	function get_total_datetime_space($datetimebegin, $datetimeend)
+	{
+		$query = $this->db->query("select * from ".$this->table." where datetime > '".$datetimebegin."' and datetime < '".$datetimeend."'");
+		return $query->num_rows();
+	}
+	function get_total_date($date)
+	{
+		$query = $this->db->query("select * from ".$this->table." where date < '".$date."'");
+		return $query->num_rows();
+	}
+
 	/**
 	 * Lay tong so
 	 * $field: cot muon tinh tong

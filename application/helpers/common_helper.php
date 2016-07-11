@@ -56,4 +56,9 @@
 		$startday = $now['mday'] - $space;
 		return $startday;
 	}
+	function getWeekInfo()
+	{
+		$weekinfo = array();
+		
+	}
 ?>

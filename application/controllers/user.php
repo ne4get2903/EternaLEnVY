@@ -184,6 +184,7 @@ class User extends MY_Controller {
 				$user['name'] = $hoten;
 				$user['email'] = $email;
 				$user['sex'] = $gioitinh;
+				$user['datetime'] = gettimenow();
 				$user['avatalink'] = 'avata.png';
 				$this->doregist($user);
 				echo json_encode($result);

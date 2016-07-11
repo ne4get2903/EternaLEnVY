@@ -7,7 +7,7 @@ class Messenger extends MY_Controller {
 	{
 		$this->load->model('contact_model');
 		$contactlist = $this->contact_model->getcontactlist();
-		$data['contactlist'] =  $contactlist;
+		$data['contactlist'] = $contactlist;
 		//pre($contactlist);
 		$data['temp'] = 'admin/messenger/index';
 		$this->load->view('admin/main', $data);

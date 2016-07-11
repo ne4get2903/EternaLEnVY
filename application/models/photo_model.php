@@ -51,6 +51,21 @@ class Photo_model extends MY_Model {
 	{
 		
 	}
+	public function count_photo()
+	{
+		$result = array();
+		if ($this->get_total()) {
+			$result['total'] = $this->get_total();
+		}
+		$time = getdate();
+		$result['count_by_date'] = array();
+		for ($i=6; $i >= 0; $i--) {
+			$date = mktime($time['hours'], $time['minutes'], $time['seconds'],$time['mon'], ($time ['mday'] - $i), $time['year']);
+			$dateweek[$i] = date('Y/m/d H:m:s', $date);
+			$result['count_by_date'][$i] = $this->get_total_date($dateweek[$i]);
+		}
+		return $result;
+	}
 }
 
 /* End of file photo_model.php */
