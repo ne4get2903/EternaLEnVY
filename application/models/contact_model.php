@@ -18,7 +18,7 @@ class Contact_model extends MY_Model {
 	}
 	public function getcontactlist()
 	{
-		$input['order'] = array('status','asc');
+		$input['order'] = array('status', 'asc');
 		if ($this->get_list($input)) {
 			return $result = $this->get_list($input);
 		}
@@ -26,6 +26,16 @@ class Contact_model extends MY_Model {
 		{
 			return false;
 		}
+	}
+	public function readcontact($id)
+	{
+		$input['where'] = array("id" => $id);
+		$row = $this->get_row($input);
+		return $row;
+	}
+	public function deletecontact($id)
+	{
+		$this->delete($id);
 	}
 }
 
