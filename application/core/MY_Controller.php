@@ -34,7 +34,6 @@ class MY_Controller extends CI_Controller {
         if ($this->session->userdata('user_s')) {
             $userid = $this->session->userdata('user_s')['id'];
             $role = $this->user_model->getuserinfo($userid)->role;
-            echo $role;
         }
         if($role == 0)
         {
